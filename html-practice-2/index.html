@@ -1,0 +1,59 @@
+<!-- 
+    > SPEC: HTML Practice II
+    > You'll create a registration form and confirmation page
+    
+
+    > create boilerplate in index.html
+    > then create a form element which will contain inputs
+    > inside the form, add the following inputs, with each on its own line
+    > 1. A text input 
+    > 2. A password input
+    > 3. A select input
+    > 4. A submit input (button)
+
+    > Next add the following labels to the inputs, linking them with "for" attributes
+    > 1. Username
+    > 2. Password
+    > 3. Gender
+
+    > Almost done!
+
+    > Now create a second file in this directory called "second.html", and add boilerplate
+    > 1. Add the "success.png" image (from this directory) into the body of "second.html"
+    > 2. Also, add a <button> that links back to "index.html" (hint: relative path)
+
+    > Lastly, go back to your form, and change it to link to "second.html" on submit!
+    > Now you have a working form and confirmation page!
+-->
+
+<!-- Add your HTML here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and confirmation page</title>
+</head>
+<body>
+    <form action="second.html">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+                <select name="Gender" id="gender">Gender
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
